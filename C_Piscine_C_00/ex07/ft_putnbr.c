@@ -1,25 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mvasquez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/10 15:05:23 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/15 13:32:34 by mvasquez         ###   ########.fr       */
+/*   Created: 2025/07/15 15:11:54 by mvasquez          #+#    #+#             */
+/*   Updated: 2025/07/15 15:20:03 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_alphabet(void)
+void	ft_puntbr(int nb)
 {
-	char	letter;
-
-	letter = 'a';
-	while (letter <= 'z')
+	if (nb < 0)
 	{
-		write(1, &letter, 1);
-		letter++;
+		write(1, "-", 1);
+		nb *= -1;
 	}
+	if (nb == -2147483648)
+	{
+		write(1, "2147483648", 12);
+		return ;
+	}
+
 }
