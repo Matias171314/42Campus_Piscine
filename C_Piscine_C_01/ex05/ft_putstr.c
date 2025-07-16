@@ -6,7 +6,7 @@
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 02:35:03 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/13 03:14:51 by mvasquez         ###   ########.fr       */
+/*   Updated: 2025/07/16 12:44:32 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putstr(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		write(1, *str, 1);
+		write(1, &str[i], 1);
 		i++;
 	}
 }

@@ -1,28 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/15 15:11:54 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/16 13:37:50 by mvasquez         ###   ########.fr       */
+/*   Created: 2025/07/16 13:41:12 by mvasquez          #+#    #+#             */
+/*   Updated: 2025/07/16 13:41:43 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_puntbr(int nb)
-{
-	if (nb < 0)
-	{
-		write(1, "-", 1);
-		nb *= -1;
-	}
-	if (nb == -2147483648)
-	{
-		write(1, "2147483648", 12);
-		return ;
-	}
+void	ft_putstr(char *str);
 
+int	main(void)
+{
+	char	*texto = "Hola, soy Matías! Esta es una prueba de ft_putstr.\n";
+
+	ft_putstr(texto);
+	return (0);
 }

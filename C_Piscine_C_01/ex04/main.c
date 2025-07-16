@@ -1,28 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/15 15:11:54 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/16 13:37:50 by mvasquez         ###   ########.fr       */
+/*   Created: 2025/07/16 13:41:03 by mvasquez          #+#    #+#             */
+/*   Updated: 2025/07/16 13:41:45 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-void	ft_puntbr(int nb)
+void	ft_ultimate_div_mod(int *a, int *b);
+
+int	main(void)
 {
-	if (nb < 0)
-	{
-		write(1, "-", 1);
-		nb *= -1;
-	}
-	if (nb == -2147483648)
-	{
-		write(1, "2147483648", 12);
-		return ;
-	}
+	int	x = 20;
+	int	y = 3;
 
+	printf("Antes de ft_ultimate_div_mod:\n");
+	printf("x = %d, y = %d\n", x, y);
+
+	ft_ultimate_div_mod(&x, &y);
+
+	printf("Después de ft_ultimate_div_mod:\n");
+	printf("División (x) = %d\n", x);
+	printf("Módulo (y) = %d\n", y);
+
+	return (0);
 }

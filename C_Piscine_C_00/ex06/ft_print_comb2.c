@@ -6,52 +6,41 @@
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 14:22:20 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/15 15:37:44 by mvasquez         ###   ########.fr       */
+/*   Updated: 2025/07/16 13:37:55 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_pares(char a, char b, char c, char d)
+void	ft_putchar(char c)
 {
-	write (1, &a, 1);
-	write (1, &b, 1);
-	write (1, " ", 1);
-	write (1, &c, 1);
-	write (1, &d, 1);
-	if (!(a == '9' && b == '8' && c == '9' && d == '9'))
-		write (1, ", ", 2);
+	write(1, &c, 1);
+}
+
+void	ft_print_number(int n)
+{
+	ft_putchar(n / 10 + '0');
+	ft_putchar(n % 10 + '0');
 }
 
 void	ft_print_comb2(void)
 {
-	char	a;
-	char	b;
-	char	c;
-	char	d;
+	int	i;
+	int	j;
 
-	a = '0';
-	b = '0';
-	c = '0';
-	d = '1';
-	while (a <= '9')
+	i = 0;
+	while (i <= 98)
 	{
-		while (b <= '8')
+		j = i + 1;
+		while (j <= 99)
 		{
-			while (c <= '9')
-			{
-				while (d <= '9')
-				{
-					ft_print_pares(a, b, c, d);
-					d++;
-				}
-				d = '0';
-				c++;
-			}
-			c = '0';
-			b++;
+			ft_print_number(i);
+			write(1, " ", 1);
+			ft_print_number(j);
+			if (!(i == 98 && j == 99))
+				write (1, ", ", 2);
+			j++;
 		}
-		b = '0';
-		a++;
+		i++;
 	}
 }

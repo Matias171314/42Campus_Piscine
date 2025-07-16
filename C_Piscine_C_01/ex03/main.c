@@ -1,28 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/15 15:11:54 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/16 13:37:50 by mvasquez         ###   ########.fr       */
+/*   Created: 2025/07/16 13:40:51 by mvasquez          #+#    #+#             */
+/*   Updated: 2025/07/16 13:41:47 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-void	ft_puntbr(int nb)
+// Declaración de la función
+void	ft_div_mod(int a, int b, int *div, int *mod);
+
+int	main(void)
 {
-	if (nb < 0)
-	{
-		write(1, "-", 1);
-		nb *= -1;
-	}
-	if (nb == -2147483648)
-	{
-		write(1, "2147483648", 12);
-		return ;
-	}
+	int a = 20;
+	int b = 6;
+	int division;
+	int modulo;
 
+	ft_div_mod(a, b, &division, &modulo);
+
+	printf("División: %d\n", division);  // Debería mostrar 3
+	printf("Módulo: %d\n", modulo);      // Debería mostrar 2
+
+	return (0);
 }

@@ -1,28 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/15 15:11:54 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/16 13:37:50 by mvasquez         ###   ########.fr       */
+/*   Created: 2025/07/16 13:39:13 by mvasquez          #+#    #+#             */
+/*   Updated: 2025/07/16 13:39:30 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-void	ft_puntbr(int nb)
+void	ft_ft(int *nbr);
+
+int	main(void)
 {
-	if (nb < 0)
-	{
-		write(1, "-", 1);
-		nb *= -1;
-	}
-	if (nb == -2147483648)
-	{
-		write(1, "2147483648", 12);
-		return ;
-	}
+	int	num;
 
+	num = 0;
+	printf("Antes de ft_ft: %d\n", num);
+
+	ft_ft(&num);
+
+	printf("Después de ft_ft: %d\n", num);
+
+	return (0);
 }
