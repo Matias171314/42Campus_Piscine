@@ -6,7 +6,7 @@
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 13:37:41 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/15 13:46:37 by mvasquez         ###   ########.fr       */
+/*   Updated: 2025/07/18 11:39:41 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,9 @@ void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
+
+/*int	main(void)
+{
+	ft_putchar('M');
+	return (0);
+}*/

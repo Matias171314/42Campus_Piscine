@@ -6,7 +6,7 @@
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 15:25:28 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/15 13:34:53 by mvasquez         ###   ########.fr       */
+/*   Updated: 2025/07/18 11:40:00 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,9 @@ void	ft_print_reverse_alphabet(void)
 		letter--;
 	}
 }
+
+/*int	main(void)
+{
+	ft_print_reverse_alphabet();
+	return (0);
+}*/

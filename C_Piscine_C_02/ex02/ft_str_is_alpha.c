@@ -6,7 +6,7 @@
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:54 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/17 15:01:22 by mvasquez         ###   ########.fr       */
+/*   Updated: 2025/07/18 12:39:27 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,9 @@ int	ft_str_is_alpha(char *str)
 	return (is_alpha);
 }
 
-// #include <stdio.h>
+/*#include <stdio.h>
 
-/*int	main(void)
+int	main(void)
 {
 	char test1[] = "Prueba";
 	char test2[] = "/dwxaxwd";

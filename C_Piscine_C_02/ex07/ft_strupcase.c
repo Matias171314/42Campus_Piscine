@@ -6,7 +6,7 @@
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 15:10:53 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/17 16:17:32 by mvasquez         ###   ########.fr       */
+/*   Updated: 2025/07/18 12:40:00 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ char	*ft_strupcase(char *str)
 	return (str);
 }
 
-//#include <stdio.h>
+/*#include <stdio.h>
 
-/*int	main(void)
+int	main(void)
 {
 	char test1[] = "hola amigo";
 	char test2[] = "123mayuscula";

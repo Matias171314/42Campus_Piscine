@@ -6,7 +6,7 @@
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 14:27:39 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/17 16:15:24 by mvasquez         ###   ########.fr       */
+/*   Updated: 2025/07/18 12:39:37 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ int	ft_str_is_lowercase(char *str)
 	return (is_lowercase);
 }
 
-//#include <stdio.h>
+/*#include <stdio.h>
 
-/*int	main(void)
+int	main(void)
 {
 	char test1[] = "awdwada";
 	char test2[] = "awdwS";

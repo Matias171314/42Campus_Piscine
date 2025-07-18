@@ -6,7 +6,7 @@
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 11:53:18 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/17 12:59:48 by mvasquez         ###   ########.fr       */
+/*   Updated: 2025/07/18 12:39:28 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ char	*ft_strcpy(char *dest, char *src)
 	return (dest);
 }
 
-//#include <stdio.h>
+/*#include <stdio.h>
 
-/*int	main (void)
+int	main (void)
 {
 	char src[] = "prueba123";
 	char dest[] = "";

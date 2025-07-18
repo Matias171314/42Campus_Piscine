@@ -6,7 +6,7 @@
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 09:06:36 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/15 14:21:25 by mvasquez         ###   ########.fr       */
+/*   Updated: 2025/07/18 12:25:27 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,3 +39,9 @@ void	ft_print_comb(void)
 		a++;
 	}
 }
+
+/*int	main(void)
+{
+	ft_print_comb();
+	return (0);
+}*/

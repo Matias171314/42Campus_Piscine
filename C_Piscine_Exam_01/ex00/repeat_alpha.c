@@ -1,21 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   repeat_alpha.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mvasquez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/15 14:08:37 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/16 13:34:48 by mvasquez         ###   ########.fr       */
+/*   Created: 2025/07/18 12:42:02 by mvasquez          #+#    #+#             */
+/*   Updated: 2025/07/18 12:42:02 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_is_negative(int n);
 
-int	main(void)
-{
-	ft_is_negative(0);
-	ft_is_negative(13);
-	ft_is_negative(-1);
-	return (0);
-}

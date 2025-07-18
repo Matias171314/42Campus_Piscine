@@ -1,19 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   first_word.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mvasquez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/15 13:51:16 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/15 13:51:24 by mvasquez         ###   ########.fr       */
+/*   Created: 2025/07/18 12:47:54 by mvasquez          #+#    #+#             */
+/*   Updated: 2025/07/18 12:47:55 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_reverse_alphabet(void);
 
-int	main(void)
-{
-	ft_print_reverse_alphabet();
-	return (0);
-}

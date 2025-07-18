@@ -6,7 +6,7 @@
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 15:29:32 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/17 18:44:31 by mvasquez         ###   ########.fr       */
+/*   Updated: 2025/07/18 12:40:13 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,9 @@ char	*ft_strcapitalize(char *str)
 	return (str);
 }
 
-//#include <stdio.h>
+/*#include <stdio.h>
 
-/*int	main(void)
+int	main(void)
 {
 	char test1[] = "hOla amigo";
 	char test2[] = "123_mayuscula";

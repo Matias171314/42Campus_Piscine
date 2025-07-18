@@ -6,7 +6,7 @@
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 15:21:34 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/17 16:17:58 by mvasquez         ###   ########.fr       */
+/*   Updated: 2025/07/18 12:40:06 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ char	*ft_strlowcase(char *str)
 	return (str);
 }
 
-//#include <stdio.h>
+/*#include <stdio.h>
 
-/*int	main(void)
+int	main(void)
 {
 	char test1[] = "HOLA AMIGO";
 	char test2[] = "123MAYUSCULA";

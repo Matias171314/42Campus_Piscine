@@ -6,7 +6,7 @@
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 12:55:13 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/17 18:31:40 by mvasquez         ###   ########.fr       */
+/*   Updated: 2025/07/18 12:39:28 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	return (dest);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 
 int	main (void)
 {
@@ -37,4 +37,4 @@ int	main (void)
 	printf("dest antes: %s\n", dest);
 	printf("dest despues: %s", ft_strncpy(dest, src, 10));
 	return (0);
-}
+}*/

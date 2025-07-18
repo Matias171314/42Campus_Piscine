@@ -6,7 +6,7 @@
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 14:22:53 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/17 16:15:25 by mvasquez         ###   ########.fr       */
+/*   Updated: 2025/07/18 12:39:25 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ int	ft_str_is_numeric(char *str)
 	return (is_numeric);
 }
 
-//#include <stdio.h>
+/*include <stdio.h>
 
-/*int	main(void)
+int	main(void)
 {
 	char test1[] = "14854";
 	char test2[] = "14862";

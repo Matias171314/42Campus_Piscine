@@ -6,7 +6,7 @@
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 14:48:59 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/17 16:17:13 by mvasquez         ###   ########.fr       */
+/*   Updated: 2025/07/18 12:39:53 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ int	ft_str_is_printable(char *str)
 	return (is_printable);
 }
 
-//#include <stdio.h>
+/*#include <stdio.h>
 
-/*int	main(void)
+int	main(void)
 {
 	char test1[] = "awdAada";
 	char test2[] = "XWADdñññWDXX";
