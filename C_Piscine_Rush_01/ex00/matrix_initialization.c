@@ -1,40 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   matrix_initialization.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/18 10:06:11 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/22 14:46:35 by mvasquez         ###   ########.fr       */
+/*   Created: 2025/07/20 14:39:30 by matroche          #+#    #+#             */
+/*   Updated: 2025/07/21 13:37:50 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *src)
+#include <unistd.h>
+
+void	initialize_matrix(int matrix[4][4]) // Función que inicializa la matriz 4x4 con ceros
 {
-	int	i;
-	int	j;
+	int	i; // Índice para recorrer las filas
+	int	j; // Índice para recorrer las columnas
 
 	i = 0;
-	j = 0;
-	while (dest[i] != '\0')
-		i++;
-	while (src[j] != '\0')
+	while (i < 4) // Recorre las filas de la matriz
 	{
-		dest[i + j] = src[j];
-		j++;
+		j = 0;
+		while (j < 4) // Recorre las columnas de la matriz
+		{
+			matrix[i][j] = 0; // Asigna el valor 0 a cada celda de la matriz
+			j++;
+		}
+		i++;
 	}
-	dest[i + j] = '\0';
-	return (dest);
 }
-
-/*#include <stdio.h>
-#include <string.h>
-
-int main(void)
-{
-	char dest[] = "Hola, ";
-	char src[] = "Bola!";
-	printf("Resultado de strcat: %s\n", ft_strcat(dest, src));
-	return (0);
-}*/

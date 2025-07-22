@@ -6,15 +6,14 @@
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 15:29:32 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/18 12:40:13 by mvasquez         ###   ########.fr       */
+/*   Updated: 2025/07/21 12:34:18 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	is_alpha_numeric(char c)
+int	is_letter(char c)
 {
 	return ((c >= 'A' && c <= 'Z')
-		|| (c >= 'a' && c <= 'z')
-		|| (c >= '0' && c <= '9'));
+		|| (c >= 'a' && c <= 'z'));
 }
 
 char	*ft_strcapitalize(char *str)
@@ -26,7 +25,7 @@ char	*ft_strcapitalize(char *str)
 	new_word = 1;
 	while (str[i] != '\0')
 	{
-		if (is_alpha_numeric(str[i]))
+		if (is_letter(str[i]))
 		{
 			if (new_word && (str[i] >= 'a' && str[i] <= 'z'))
 				str[i] -= 32;
