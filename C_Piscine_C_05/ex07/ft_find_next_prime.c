@@ -1,34 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_find_next_prime.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/23 17:36:26 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/23 23:23:20 by mvasquez         ###   ########.fr       */
+/*   Created: 2025/07/24 01:09:39 by mvasquez          #+#    #+#             */
+/*   Updated: 2025/07/24 01:29:45 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putstr(char *str)
+int ft_is_prime(int nb)
 {
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
+	if (nb <= 1)
+		return (0);
+	if (nb == 2)
+		return (1);
+	if (nb % 2 == 0)
+		return (0);
+	for (int i = 3; i * i <= nb; i += 2)
 	{
-		write(1, &str[i], 1);
-		i++;
+		if (nb % i == 0)
+			return (0);
 	}
+	return (1);
 }
-
-/*#include <stdio.h>
-int main(void)
-{
-	char str[] = "esto_es \nuna prueba$\n hola'";
-	ft_putstr(str);
-	write(1, "\n", 1);
-	return 0;
-}*/

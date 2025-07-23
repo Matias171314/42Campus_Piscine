@@ -6,7 +6,7 @@
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 17:36:43 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/23 17:42:35 by mvasquez         ###   ########.fr       */
+/*   Updated: 2025/07/23 23:34:09 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,16 @@ void ft_putnbr(int nb)
 {
 	if (nb < 0)
 	{
-		ft_putchar('-');
 		if (nb == -2147483648)
 		{
-			ft_putchar('2');
-			nb = 147483648;
+			write(1, "-2147483648", 11);
+			return;
 		}
 		else
+		{
+			ft_putchar('-');
 			nb = -nb;
+		}
 	}
 	if (nb >= 10)
 		ft_putnbr(nb / 10);
@@ -39,10 +41,12 @@ void ft_putnbr(int nb)
 int main(void)
 {
 	ft_putnbr(42);
-	write(1, "\n", 1); // Para agregar un salto de línea al final
-	ft_putnbr(-2147483648);
-	write(1, "\n", 1); // Para agregar un salto de línea al final
+	write(1, "\n", 1);
+	ft_putnbr(-2147483647);
+	write(1, "\n", 1);
 	ft_putnbr(0);
-	write(1, "\n", 1); // Para agregar un salto de línea al final
+	write(1, "\n", 1);
+	ft_putnbr(-599);
+	write(1, "\n", 1);
 	return 0;
 }*/

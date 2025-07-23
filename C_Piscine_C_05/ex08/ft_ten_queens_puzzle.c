@@ -1,34 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_ten_queens_puzzle.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/23 17:36:26 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/23 23:23:20 by mvasquez         ###   ########.fr       */
+/*   Created: 2025/07/24 01:10:13 by mvasquez          #+#    #+#             */
+/*   Updated: 2025/07/24 01:30:21 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putstr(char *str)
+int	ft_ten_queens_puzzle(void)
 {
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		write(1, &str[i], 1);
-		i++;
-	}
+	return (0);
 }
-
-/*#include <stdio.h>
-int main(void)
-{
-	char str[] = "esto_es \nuna prueba$\n hola'";
-	ft_putstr(str);
-	write(1, "\n", 1);
-	return 0;
-}*/

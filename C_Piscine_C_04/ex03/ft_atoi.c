@@ -6,41 +6,48 @@
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 17:37:03 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/23 18:15:27 by mvasquez         ###   ########.fr       */
+/*   Updated: 2025/07/24 01:01:58 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+int	is_space(char c)
+{
+	return (c == ' ' || c == '\t' || c == '\n' ||
+			c == '\r' || c == '\v' || c == '\f');
+}
 
 int	ft_atoi(char *str)
 {
 	int	i;
-	int	sign;
+	int	negative;
 	int	result;
 
 	i = 0;
-	sign = 0;
+	negative = 0;
 	result = 0;
-	while (!(str[i] >= '0' && str[i] <= '9'))
+	while (is_space(str[i]))
 	{
 		i++;
-		if (str[i] == '-')
-			sign++;
 	}
-
+	while (str[i] == '-' || str[i] == '+')
+	{
+		if (str[i] == '-')
+		{
+			negative++;
+		}
+		i++;
+	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		result = result * 10 + (str[i] - '0');
 		i++;
 	}
-	while (sign != 0)
-	{
+	if (negative % 2 != 0)
 		result *= -1;
-		sign--;
-	}
 	return (result);
 }
 
-#include <stdio.h>
-#include <stdlib.h>
+/*#include <stdio.h>
 
 int main(void)
 {
@@ -55,11 +62,5 @@ int main(void)
 	printf("Resultado de ft_atoi(\"%s\"): %d\n", str3, ft_atoi(str3));
 	printf("Resultado de ft_atoi(\"%s\"): %d\n", str4, ft_atoi(str4));
 	printf("Resultado de ft_atoi(\"%s\"): %d\n", str5, ft_atoi(str5));
-
-	printf("Resultado de ft_atoi(\"%s\"): %d\n", str1, atoi(str1));
-	printf("Resultado de ft_atoi(\"%s\"): %d\n", str2, atoi(str2));
-	printf("Resultado de ft_atoi(\"%s\"): %d\n", str3, atoi(str3));
-	printf("Resultado de ft_atoi(\"%s\"): %d\n", str4, atoi(str4));
-	printf("Resultado de ft_atoi(\"%s\"): %d\n", str5, atoi(str5));
 	return 0;
-}
+}*/

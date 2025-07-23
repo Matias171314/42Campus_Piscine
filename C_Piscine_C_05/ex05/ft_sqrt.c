@@ -1,34 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/23 17:36:26 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/23 23:23:20 by mvasquez         ###   ########.fr       */
+/*   Created: 2025/07/24 01:09:04 by mvasquez          #+#    #+#             */
+/*   Updated: 2025/07/24 01:28:53 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putstr(char *str)
+int	ft_sqrt(int nb)
 {
 	int	i;
 
+	if (nb < 0)
+		return (0);
 	i = 0;
-	while (str[i] != '\0')
+	while (i * i < nb)
 	{
-		write(1, &str[i], 1);
 		i++;
 	}
+	if (i * i == nb)
+		return (i);
+	else
+		return (0);
 }
-
-/*#include <stdio.h>
-int main(void)
-{
-	char str[] = "esto_es \nuna prueba$\n hola'";
-	ft_putstr(str);
-	write(1, "\n", 1);
-	return 0;
-}*/

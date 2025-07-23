@@ -1,34 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_fibonacci.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/23 17:36:26 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/23 23:23:20 by mvasquez         ###   ########.fr       */
+/*   Created: 2025/07/24 01:08:45 by mvasquez          #+#    #+#             */
+/*   Updated: 2025/07/24 01:28:24 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putstr(char *str)
+int	ft_fibonacci(int index)
 {
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		write(1, &str[i], 1);
-		i++;
-	}
+	if (index < 0)
+		return (-1);
+	if (index == 0)
+		return (0);
+	if (index == 1)
+		return (1);
+	return (ft_fibonacci(index - 1) + ft_fibonacci(index - 2));
 }
-
-/*#include <stdio.h>
-int main(void)
-{
-	char str[] = "esto_es \nuna prueba$\n hola'";
-	ft_putstr(str);
-	write(1, "\n", 1);
-	return 0;
-}*/
