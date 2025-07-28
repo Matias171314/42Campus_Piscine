@@ -1,38 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_fibonacci.c                                     :+:      :+:    :+:   */
+/*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mvasquez <mvasquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/24 01:08:45 by mvasquez          #+#    #+#             */
-/*   Updated: 2025/07/24 01:28:24 by mvasquez         ###   ########.fr       */
+/*   Created: 2025/07/24 01:51:44 by mvasquez          #+#    #+#             */
+/*   Updated: 2025/07/25 14:19:17 by mvasquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_fibonacci(int index)
+#include <unistd.h>
+
+void	ft_putstr(char *str)
 {
-	if (index < 0)
-		return (-1);
-	if (index == 0)
-		return (0);
-	if (index == 1)
-		return (1);
-	return (ft_fibonacci(index - 1) + ft_fibonacci(index - 2));
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		write(1, &str[i], 1);
+		i++;
+	}
 }
 
-/*#include <stdio.h>
-int main(void)
+int	main(int argc, char **argv)
 {
-	int i;
-	int index;
-	i = 0;
-	index = 4;
-	while (i < index)
+	int	i;
+
+	i = 1;
+	while (i < argc)
 	{
-		int result = ft_fibonacci(i);
-		printf("Fibonacci de %d es: %d\n", i, result);
+		ft_putstr(argv[i]);
+		write(1, "\n", 1);
 		i++;
 	}
 	return (0);
-}*/
+}

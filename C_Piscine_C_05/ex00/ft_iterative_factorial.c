@@ -12,20 +12,20 @@
 
 int	ft_iterative_factorial(int nb)
 {
-	int res;
-	
-	res = 1;
+	int	result;
+
+	result = 1;
 	if (nb < 0)
 		return (0);
 	while (nb > 1)
 	{
-		res *= nb;
+		result *= nb;
 		nb--;
 	}
-	return (res);
+	return (result);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 int main(void)
 {
 	int result;
@@ -35,5 +35,6 @@ int main(void)
 	printf("El factorial de 5 es: %d\n", result);
 	result = ft_iterative_factorial(10);
 	printf("El factorial de 10 es: %d\n", result);
-}
-
+	result = ft_iterative_factorial(0);
+	printf("El factorial de 0 es: %d\n", result);
+}*/
