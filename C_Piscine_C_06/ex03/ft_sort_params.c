@@ -51,6 +51,7 @@ void	bubble_sort(int argc, char **argv)
 {
 	int	i;
 
+	i = 1;
 	while (argv[i] && argv[i + 1])
 	{
 		i = 1;

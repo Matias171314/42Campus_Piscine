@@ -5,6 +5,8 @@
         "stdio.h": "c",
         "string.h": "c",
         "functions.h": "c",
-        "cmath": "c"
+        "cmath": "c",
+        "fcntl.h": "c",
+        "bsq.h": "c"
     }
 }
